@@ -40,7 +40,7 @@ svg {
 }
 
 .snare-pad.active {
-  background: #7b68ee;
+  background: #72587f;
 }
 
 .hihat-pad.active {
@@ -102,4 +102,13 @@ svg {
 select {
   padding: 1rem;
   font-size: 1rem;
+}
+
+@keyframes playTrack {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
 }
