@@ -49,6 +49,20 @@ class DrumKit {
       this.isPlaying = setInterval(() => {
         this.repeat();
       }, interval);
+    } else {
+      //remove the interval
+      clearInterval(this.isPlaying);
+      this.isPlaying = null;
+    }
+  }
+  updateBtn() {
+    // if it's playng, add a stop, if it's not playing, add a play
+    if (!this.isPlaying) {
+      this.playBtn.innerText = "stop";
+      this.playBtn.classList.add("active");
+    } else {
+      this.playBtn.innerText = "play";
+      this.playBtn.classList.remove("active");
     }
   }
 }
@@ -64,5 +78,6 @@ drumKit.pads.forEach((pad) => {
 });
 
 drumKit.playBtn.addEventListener("click", function () {
+  drumKit.updateBtn();
   drumKit.start();
 });
