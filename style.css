@@ -3,6 +3,11 @@
   padding: 0;
   /* when you add padding and whatnot, add to inside and not outside*/
   box-sizing: border-box;
+  background: #2b2b2b;
+}
+
+h1 {
+  color: white;
 }
 
 body {
@@ -21,18 +26,19 @@ svg {
   height: 5rem;
   margin: 1rem 0.5rem;
   cursor: pointer;
+  border: 1px solid white;
 }
 
 .kick-pad {
-  background: #b0c4de;
+  background: #00516c;
 }
 
 .snare-pad {
-  background: #e6e6fa;
+  background: #6c006c;
 }
 
 .hihat-pad {
-  background: #ffe4e1;
+  background: #ff4a6a;
 }
 
 .kick-pad.active {
@@ -45,6 +51,12 @@ svg {
 
 .hihat-pad.active {
   background: #bc8f8f;
+}
+
+#snare-select,
+#kick-select,
+#hihat-select {
+  background: white;
 }
 
 .sequencer {
@@ -82,7 +94,7 @@ svg {
 .controls button {
   padding: 1rem;
   border: none;
-  background: #708090;
+  background: #2b2b2b;
   color: white;
   font-size: 1rem;
   cursor: pointer;
@@ -92,8 +104,8 @@ svg {
 .play {
   padding: 1rem 2rem;
   font-size: 1.5rem;
-  background: #708090;
-  color: white;
+  background: white;
+  color: #2b2b2b;
   border: none;
   cursor: pointer;
   margin-top: 3rem;
@@ -119,7 +131,7 @@ select {
   margin: 1rem 0rem;
   width: 100%;
   position: relative;
-  background: rgb(88, 88, 88);
+  background: white;
   cursor: pointer;
   border-radius: 1rem;
 }
@@ -128,6 +140,7 @@ select {
   font-size: 1.5rem;
   margin: 2rem;
   text-align: center;
+  color: white;
 }
 
 @keyframes playTrack {
