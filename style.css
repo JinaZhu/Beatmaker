@@ -26,7 +26,7 @@ svg {
   height: 5rem;
   margin: 1rem 0.5rem;
   cursor: pointer;
-  border: 1px solid white;
+  border-radius: 10%;
 }
 
 .kick-pad {
@@ -57,6 +57,7 @@ svg {
 #kick-select,
 #hihat-select {
   background: white;
+  border-radius: 5%;
 }
 
 .sequencer {
@@ -74,7 +75,7 @@ svg {
   align-items: center;
   width: 90%;
   justify-content: space-between;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 .kick,
@@ -109,6 +110,7 @@ svg {
   border: none;
   cursor: pointer;
   margin-top: 3rem;
+  border-radius: 10%;
 }
 
 select {
